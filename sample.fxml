@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" prefHeight="575.0" prefWidth="581.0" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Main">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="background" fitHeight="602.0" fitWidth="648.0" layoutX="-8.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@llava1.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="playgame" layoutX="116.0" layoutY="402.0" mnemonicParsing="false" onMouseClicked="#play" prefHeight="79.0" prefWidth="138.0" style="-fx-background-color: YELLOW; -fx-border-color: ORANGE;" text="Play Game">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewscrs" layoutX="354.0" layoutY="402.0" mnemonicParsing="false" onMouseClicked="#viewScores" prefHeight="79.0" prefWidth="138.0" style="-fx-background-color: YELLOW; -fx-border-color: ORANGE;" text="View Scores">
+               <font>
+                  <Font size="19.0" />
+               </font></Button>
+            <ImageView fx:id="llama" fitHeight="150.0" fitWidth="200.0" layoutX="255.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Llama_real.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="title" fitHeight="189.0" fitWidth="453.0" layoutX="71.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Text_Title.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="scrboardtitle" fill="#c3ff00" layoutX="160.0" layoutY="70.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCOREBOARD" wrappingWidth="294.0">
+               <font>
+                  <Font size="46.0" />
+               </font>
+            </Text>
+            <Text fx:id="scores" fill="#14c5ff" layoutX="105.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="399.13671875">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
